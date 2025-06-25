@@ -113,6 +113,17 @@ Contributions are welcome! If you'd like to contribute to MCP, please follow the
 
 We appreciate your help in making MCP a more robust and effective platform! 🙏
 
+## 🏗️ Project Structure
+
+This project may contain components written in different languages. Here's a general guide:
+
+*   **Go Components:** Located under `src/go/`.
+    *   `mcp/`: Main Go module for the Man-in-the-Middle Check Platform.
+        *   `cmd/mcp-server/`: Entry point for the MCP API server.
+        *   `pkg/`: Internal packages used by the MCP application (e.g., `claude/` for Claude AI integration).
+
+*(As other language components are added, they will be documented here.)*
+
 ## 📜 License
 
 *(The license for this project will be determined. For now, consider it proprietary unless otherwise stated.)*
