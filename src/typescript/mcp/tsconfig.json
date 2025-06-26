@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "target": "ES2020", // O una versión más reciente como ES2022, ESNext
+    "module": "commonjs", // O "ESNext" si planeas usar módulos ES en Node.js (requiere ajustes)
+    "strict": true, // Habilita todas las opciones de verificación estricta de tipos
+    "esModuleInterop": true, // Permite la interoperabilidad con módulos CommonJS
+    "skipLibCheck": true, // Omite la verificación de tipos de los archivos de declaración (d.ts)
+    "forceConsistentCasingInFileNames": true, // Asegura que las mayúsculas y minúsculas en los nombres de archivo sean consistentes
+    "outDir": "./dist", // Directorio de salida para los archivos compilados
+    "rootDir": "./", // Directorio raíz de los archivos fuente TypeScript
+    "declaration": true, // Genera archivos .d.ts correspondientes
+    "sourceMap": true, // Genera sourcemaps para facilitar la depuración
+    // Opciones adicionales que podrían ser útiles:
+    // "noImplicitAny": true, // Marca error en expresiones y declaraciones con un tipo 'any' implícito
+    // "strictNullChecks": true, // Verificación estricta de nulos y undefined
+    // "resolveJsonModule": true, // Permite importar archivos .json como módulos
+    // "experimentalDecorators": true, // Habilita decoradores experimentales (si los usas)
+    // "emitDecoratorMetadata": true // Emite metadatos de tipo para decoradores (usado con reflect-metadata)
+  },
+  "include": [
+    "*.ts", // Incluye todos los archivos .ts en el directorio raíz (src/typescript/mcp)
+    "**/*.ts" // Incluye todos los archivos .ts en subdirectorios
+  ],
+  "exclude": [
+    "node_modules", // Excluye el directorio node_modules
+    "dist", // Excluye el directorio de salida
+    "**/*.test.ts" // Excluye archivos de prueba si se manejan por separado (e.g., con Jest)
+  ]
+}
