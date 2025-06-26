@@ -1,0 +1,41 @@
+{
+  "name": "mcp-typescript",
+  "version": "0.1.0",
+  "description": "TypeScript implementation of a Message Control Plane (MCP)",
+  "main": "dist/mcp.js",
+  "types": "dist/mcp.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/mcp.js",
+    "dev": "ts-node mcp.ts",
+    "test": "jest",
+    "lint": "eslint . --ext .ts",
+    "lint:fix": "eslint . --ext .ts --fix"
+  },
+  "keywords": [
+    "mcp",
+    "message control plane",
+    "typescript",
+    "anthropic"
+  ],
+  "author": "AI Agent (Jules)",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "^29.0.0",
+    "@types/node": "^20.0.0",
+    "eslint": "^8.0.0",
+    "@typescript-eslint/eslint-plugin": "^7.0.0",
+    "@typescript-eslint/parser": "^7.0.0",
+    "jest": "^29.0.0",
+    "ts-jest": "^29.0.0",
+    "ts-node": "^10.9.0",
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {},
+  "files": [
+    "dist/**/*"
+  ],
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
