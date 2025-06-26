@@ -121,6 +121,12 @@ This project may contain components written in different languages. Here's a gen
     *   `mcp/`: Main Go module for the Man-in-the-Middle Check Platform.
         *   `cmd/mcp-server/`: Entry point for the MCP API server.
         *   `pkg/`: Internal packages used by the MCP application (e.g., `claude/` for Claude AI integration).
+*   **Python Components:** Located under `src/python/`.
+    *   `mcp/`: FastAPI application for MCP.
+        *   `mcp_fastapi/`: Main package for the FastAPI application.
+        *   `tests/`: Pytest tests for the application.
+        *   `pyproject.toml`: Project metadata and dependencies managed by Poetry.
+        *   `README.md`: Specific instructions for the Python MCP component.
 
 *(As other language components are added, they will be documented here.)*
 

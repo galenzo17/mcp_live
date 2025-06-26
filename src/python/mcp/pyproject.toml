@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "mcp-fastapi"
+version = "0.1.0"
+description = "Python MCP implementation using FastAPI"
+authors = ["Jules <agent@example.com>"]
+readme = "README.md"
+packages = [{include = "mcp_fastapi", from = "."}]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+fastapi = "^0.104.1"
+uvicorn = {extras = ["standard"], version = "^0.24.0"}
+pydantic = "^2.5.2"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.3"
+httpx = "^0.25.1" # For testing FastAPI endpoints
+pytest-asyncio = "^0.21.1" # For testing async FastAPI code
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
